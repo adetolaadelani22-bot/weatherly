@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+    <line x1="4" y1="40" x2="44" y2="40" stroke="#EA580C" stroke-width="4" stroke-linecap="round"/>
+    <!-- Half sun setting -->
+    <path d="M12 40a12 12 0 0 1 24 0H12Z" fill="#EA580C"/>
+    <!-- Arrow pointing down -->
+    <path d="M24 16v8m-4-4l4 4 4-4" stroke="#DC2626" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>

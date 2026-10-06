@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+    <defs>
+      <linearGradient id="rainh-cloud" x1="16" y1="14" x2="48" y2="38" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#475569"/>
+        <stop offset="1" stop-color="#1E293B"/>
+      </linearGradient>
+    </defs>
+    <path d="M18 38h28a10 10 0 0 0 1.2-19.9A14 14 0 0 0 20 20a9 9 0 0 0-2 18Z" fill="url(#rainh-cloud)" stroke="#334155" stroke-width="1.5"/>
+    <g stroke="#1D4ED8" stroke-width="4" stroke-linecap="round">
+      <line x1="21" y1="44" x2="16" y2="56"/>
+      <line x1="31" y1="44" x2="26" y2="56"/>
+      <line x1="41" y1="44" x2="36" y2="56"/>
+      <line x1="26" y1="48" x2="22" y2="59"/>
+      <line x1="36" y1="48" x2="32" y2="59"/>
+    </g>
+  </svg>

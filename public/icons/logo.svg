@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+    <rect width="64" height="64" rx="16" fill="url(#logo-grad)"/>
+    <defs>
+      <linearGradient id="logo-grad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#2563EB"/>
+        <stop offset="1" stop-color="#1D4ED8"/>
+      </linearGradient>
+      <radialGradient id="sun-grad" cx="26" cy="24" r="14" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#FDE047"/>
+        <stop offset="1" stop-color="#F59E0B"/>
+      </radialGradient>
+      <linearGradient id="cloud-grad" x1="20" y1="28" x2="52" y2="48" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#FFFFFF"/>
+        <stop offset="1" stop-color="#E2E8F0"/>
+      </linearGradient>
+    </defs>
+    <circle cx="26" cy="24" r="12" fill="url(#sun-grad)"/>
+    <path d="M22 46h24a10 10 0 0 0 1.2-19.9A14 14 0 0 0 21 28.5 9 9 0 0 0 22 46Z" fill="url(#cloud-grad)" filter="drop-shadow(0 4px 6px rgba(0,0,0,0.15))"/>
+  </svg>

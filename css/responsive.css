@@ -1,0 +1,237 @@
+/**
+ * Weatherly — Responsive Media Queries
+ * Mobile-first optimization across phones, tablets, laptops, and wide monitors.
+ * Ensures strict touch targets (>= 44px on mobile) and desktop bento elegance.
+ */
+
+/* ==========================================================================
+   Small Devices & Mobile Phones (< 640px)
+   ========================================================================== */
+@media (max-width: 639px) {
+  .main-wrapper {
+    padding: 16px 14px 48px 14px;
+  }
+
+  .header-container {
+    padding: 12px 16px;
+  }
+
+  .brand-title {
+    font-size: 1.125rem;
+  }
+
+  .hero-section {
+    padding: 16px 8px 12px 8px;
+    margin-bottom: 20px;
+  }
+
+  .hero-headline {
+    font-size: 1.875rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .hero-supporting {
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+  }
+
+  /* Search bar stack */
+  .search-form {
+    padding: 4px 6px 4px 12px;
+    gap: 6px;
+  }
+
+  .search-input {
+    font-size: 0.875rem;
+    padding: 8px 0;
+  }
+
+  .search-submit-btn {
+    padding: 10px 16px;
+    font-size: 0.8125rem;
+    min-height: 44px;
+  }
+
+  .location-btn {
+    min-height: 44px;
+    padding: 8px 16px;
+    font-size: 0.8125rem;
+  }
+
+  /* Current Weather Card */
+  .weather-hero-card {
+    padding: 22px 18px;
+    border-radius: var(--radius-md);
+  }
+
+  .hero-top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+
+  .location-title {
+    font-size: 1.625rem;
+  }
+
+  .hero-main-focal {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .hero-temp {
+    font-size: 4rem;
+  }
+
+  .hero-unit {
+    font-size: 1.625rem;
+  }
+
+  /* Supporting stats 2 columns */
+  .supporting-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding-top: 18px;
+  }
+
+  .stat-card {
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  /* Decision Bento Grids Stack vertically on small screens */
+  .decision-grid-duo {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .decision-card {
+    padding: 20px 16px;
+    border-radius: var(--radius-md);
+  }
+
+  .score-body {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .score-explanation {
+    width: 100%;
+  }
+
+  .outfit-items-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .eval-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .eval-timing-tag {
+    text-align: left;
+    width: 100%;
+  }
+
+  .activity-tab-btn {
+    min-height: 44px;
+    padding: 8px 16px;
+  }
+
+  .sample-city-pill {
+    min-height: 44px;
+    padding: 8px 16px;
+  }
+
+  /* 7-day row compact */
+  .daily-row {
+    grid-template-columns: 68px 1fr 110px;
+    gap: 8px;
+    padding: 12px 14px;
+  }
+
+  .daily-cond-text {
+    display: none;
+  }
+
+  .daily-rain-prob {
+    display: none;
+  }
+}
+
+/* ==========================================================================
+   Tablets & Intermediate Screens (640px to 1023px)
+   ========================================================================== */
+@media (min-width: 640px) and (max-width: 1023px) {
+  .main-wrapper {
+    padding: 24px 20px 50px 20px;
+  }
+
+  .supporting-stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .decision-grid-duo {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .daily-row {
+    grid-template-columns: 80px 1fr 68px 140px;
+  }
+}
+
+/* ==========================================================================
+   Desktop & High Resolution Monitors (>= 1024px)
+   ========================================================================== */
+@media (min-width: 1024px) {
+  .main-wrapper {
+    padding: 32px 24px 70px 24px;
+  }
+
+  .supporting-stats-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 14px;
+  }
+
+  .decision-grid-duo {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .weather-dashboard-container {
+    gap: 32px;
+  }
+
+  .weather-hero-card {
+    padding: 36px 32px;
+  }
+}
+
+/* Reduced Motion Preference for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .score-gauge-fill {
+    transition: none !important;
+  }
+
+  .bar-fill {
+    transition: none !important;
+  }
+}

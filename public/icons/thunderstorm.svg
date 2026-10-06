@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+    <defs>
+      <linearGradient id="storm-cloud" x1="16" y1="12" x2="48" y2="38" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#334155"/>
+        <stop offset="1" stop-color="#0F172A"/>
+      </linearGradient>
+    </defs>
+    <path d="M18 36h28a10 10 0 0 0 1.2-19.9A14 14 0 0 0 20 18a9 9 0 0 0-2 18Z" fill="url(#storm-cloud)" stroke="#1E293B" stroke-width="1.5"/>
+    <!-- Lightning Bolt -->
+    <path d="M34 32l-7 14h6l-3 12 12-16h-6l5-10h-7Z" fill="#FBBF24" stroke="#F59E0B" stroke-width="1.5" stroke-linejoin="round"/>
+    <g stroke="#38BDF8" stroke-width="3" stroke-linecap="round">
+      <line x1="19" y1="42" x2="16" y2="50"/>
+      <line x1="46" y1="42" x2="43" y2="50"/>
+    </g>
+  </svg>

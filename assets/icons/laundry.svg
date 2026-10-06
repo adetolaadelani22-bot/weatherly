@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+    <line x1="4" y1="12" x2="44" y2="12" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+    <!-- T-shirt hanging -->
+    <path d="M18 12l-5 4 3 3 2-2v17h12V17l2 2 3-3-5-4a4 4 0 0 1-8 0" fill="#3B82F6" stroke="#1D4ED8" stroke-width="2.5"/>
+    <!-- Clothespins -->
+    <rect x="15" y="9" width="3" height="6" fill="#F59E0B" rx="1"/>
+    <rect x="29" y="9" width="3" height="6" fill="#F59E0B" rx="1"/>
+  </svg>

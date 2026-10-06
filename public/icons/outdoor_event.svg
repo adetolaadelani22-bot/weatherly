@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+    <!-- Tree canopy -->
+    <circle cx="24" cy="18" r="14" fill="#10B981"/>
+    <circle cx="16" cy="22" r="9" fill="#059669"/>
+    <circle cx="32" cy="22" r="9" fill="#059669"/>
+    <!-- Trunk -->
+    <rect x="21" y="28" width="6" height="14" fill="#78350F" rx="2"/>
+    <!-- Ground grass -->
+    <path d="M8 42h32" stroke="#059669" stroke-width="4" stroke-linecap="round"/>
+  </svg>

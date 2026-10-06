@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weatherly — Personal Weather Decision Assistant</title>
+    <meta name="description" content="Personal weather decision assistant that transforms forecasts into practical daily recommendations." />
+    <meta property="og:title" content="Weatherly — Personal Weather Decision Assistant" />
+    <meta property="og:description" content="Personal weather decision assistant that transforms forecasts into practical daily recommendations." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts for Professional Polish Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Pure CSS Stylesheets -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <!-- Top Navigation / Brand Header -->
+    <header class="app-header" id="app-header">
+      <div class="header-container">
+        <a href="%BASE_URL%" class="brand-group" aria-label="Weatherly Home">
+          <div class="brand-icon">
+            <img src="%BASE_URL%icons/logo.svg" alt="Weatherly logo" class="brand-img" referrerPolicy="no-referrer" width="28" height="28" />
+          </div>
+          <div class="brand-text-wrap">
+            <span class="brand-title">Weatherly</span>
+            <span class="brand-tagline">Know the weather. Understand your day.</span>
+          </div>
+        </a>
+
+        <div class="header-controls">
+          <div class="unit-toggle-wrap" role="group" aria-label="Temperature unit selector">
+            <button type="button" class="unit-btn active" id="unit-c" aria-pressed="true">°C</button>
+            <button type="button" class="unit-btn" id="unit-f" aria-pressed="false">°F</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Application Shell -->
+    <main class="main-wrapper" id="main-content">
+      <!-- Landing / Hero Section -->
+      <section class="hero-section" id="hero-section">
+        <h1 class="hero-headline">WEATHERLY</h1>
+        <p class="hero-tagline">Know the weather. Understand your day.</p>
+        <p class="hero-supporting">
+          Get accurate weather information and practical recommendations for your everyday plans.
+        </p>
+
+        <!-- Prominent City Search -->
+        <div class="search-container" id="search-container">
+          <form class="search-form" id="search-form" role="search" aria-label="Search city weather">
+            <div class="search-icon-prefix" aria-hidden="true">
+              <img src="%BASE_URL%icons/search.svg" alt="Search" class="search-img" referrerPolicy="no-referrer" width="18" height="18" />
+            </div>
+            <input
+              type="text"
+              class="search-input"
+              id="search-input"
+              placeholder="Search for a city... (e.g. Lagos, London, New York)"
+              autocomplete="off"
+              spellcheck="false"
+              aria-label="City name"
+              aria-autocomplete="list"
+              aria-controls="autocomplete-dropdown"
+            />
+            <button
+              type="button"
+              class="search-clear-btn hidden"
+              id="search-clear-btn"
+              aria-label="Clear search input"
+            >
+              <img src="%BASE_URL%icons/clear.svg" alt="Clear search" class="clear-img" referrerPolicy="no-referrer" width="16" height="16" />
+            </button>
+            <button type="submit" class="search-submit-btn" id="search-submit-btn">
+              Search
+            </button>
+          </form>
+
+          <!-- Search Autocomplete Suggestions Dropdown -->
+          <div class="autocomplete-dropdown hidden" id="autocomplete-dropdown" aria-label="City suggestions"></div>
+
+          <!-- Geolocation Current Location Trigger -->
+          <div class="location-action-bar">
+            <button type="button" class="location-btn" id="use-location-btn">
+              <img src="%BASE_URL%icons/location.svg" alt="Location" class="location-img" referrerPolicy="no-referrer" width="16" height="16" />
+              <span>Use my current location</span>
+            </button>
+          </div>
+
+          <!-- Recent Searches History -->
+          <div class="recent-searches-container hidden" id="recent-searches-container"></div>
+        </div>
+      </section>
+
+      <!-- Feedback / Alert Notifications -->
+      <div id="error-banner-container" aria-live="polite"></div>
+
+      <!-- Welcoming Empty State Container -->
+      <div id="empty-state-container"></div>
+
+      <!-- Active Weather Decision Dashboard -->
+      <div class="weather-dashboard-container hidden" id="weather-dashboard">
+        <!-- 1. Current Weather Card & Supporting Stats -->
+        <section id="current-weather-mount" aria-label="Current Weather"></section>
+
+        <!-- 2. Weatherly Daily Score & Smart Daily Brief -->
+        <div class="decision-grid-duo">
+          <section id="daily-score-mount" aria-label="Today's Weather Score"></section>
+          <section id="daily-brief-mount" aria-label="Today's Smart Brief"></section>
+        </div>
+
+        <!-- 3. Hourly Rain Timeline -->
+        <section id="rain-timeline-mount" aria-label="Rain Timeline"></section>
+
+        <!-- 4. What Should I Wear & Best Outdoor Window -->
+        <div class="decision-grid-duo">
+          <section id="outfit-guide-mount" aria-label="Outfit Guide"></section>
+          <section id="best-window-mount" aria-label="Best Outdoor Window"></section>
+        </div>
+
+        <!-- 5. Plan Your Day (Activity Planner) -->
+        <section id="activity-planner-mount" aria-label="Plan Your Day Activity Evaluation"></section>
+
+        <!-- 6. Hourly Forecast Shelf -->
+        <section id="hourly-forecast-mount" aria-label="Hourly Forecast"></section>
+
+        <!-- 7. 7-Day Forecast -->
+        <section id="daily-forecast-mount" aria-label="7-Day Forecast"></section>
+      </div>
+    </main>
+
+    <!-- Professional Minimal Footer -->
+    <footer class="app-footer" id="app-footer">
+      <div class="footer-inner">
+        <p class="footer-brand">Weatherly</p>
+        <p class="footer-attribution">
+          Weather data powered by <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a>.
+        </p>
+        <p class="footer-tech">Built with HTML, CSS & Vanilla JavaScript.</p>
+      </div>
+    </footer>
+
+    <!-- Native ES6+ Module Application Entry Point -->
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

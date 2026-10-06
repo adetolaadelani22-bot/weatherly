@@ -1,0 +1,6 @@
+{
+  "name": "Weatherly",
+  "description": "Personal weather decision assistant that transforms forecasts into practical daily recommendations.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+    <defs>
+      <radialGradient id="sun-bg" cx="24" cy="22" r="12" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#FDE047"/>
+        <stop offset="1" stop-color="#F59E0B"/>
+      </radialGradient>
+      <linearGradient id="cloud-front" x1="16" y1="26" x2="52" y2="52" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#FFFFFF"/>
+        <stop offset="0.7" stop-color="#F1F5F9"/>
+        <stop offset="1" stop-color="#CBD5E1"/>
+      </linearGradient>
+    </defs>
+    <!-- Sun behind cloud -->
+    <g stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round">
+      <line x1="24" y1="6" x2="24" y2="10"/>
+      <line x1="12.7" y1="10.7" x2="15.5" y2="13.5"/>
+      <line x1="8" y1="22" x2="12" y2="22"/>
+      <line x1="35.3" y1="10.7" x2="32.5" y2="13.5"/>
+      <line x1="40" y1="22" x2="36" y2="22"/>
+    </g>
+    <circle cx="24" cy="22" r="10" fill="url(#sun-bg)"/>
+    <!-- Volumetric Cloud -->
+    <path d="M18 50h28a11 11 0 0 0 1.5-21.9A15 15 0 0 0 20 30a10 10 0 0 0-2 20Z" fill="url(#cloud-front)" stroke="#E2E8F0" stroke-width="1.5"/>
+  </svg>
